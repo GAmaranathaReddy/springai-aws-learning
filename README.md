@@ -75,6 +75,18 @@ Next, you can use the spring.ai.bedrock.<model>.<chat|embedding>.* properties to
 
 Here are the supported <model> and <chat|embedding> combinations:
 
+| Model           | Chat | Chat Streaming | Embedding                        |
+|-----------------|------|----------------|----------------------------------|
+| llama           | Yes  | Yes            | No                               |
+| jurassic2       | Yes  | No             | No                               |
+| cohere          | Yes  | Yes            | Yes                              |
+| anthropic 2     | Yes  | Yes            | No                               |
+| anthropic 3     | Yes  | Yes            | No                               |
+| jurassic2 (WIP) | Yes  | No             | No                               |
+| titan           | Yes  | Yes            | Yes (however, no batch support)  |
+
+
+
 
 For more information, refer to the documentation below for each supported model.
 
